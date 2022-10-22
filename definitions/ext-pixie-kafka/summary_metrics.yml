@@ -1,0 +1,12 @@
+latency:
+  goldenMetric: latency
+  title: Average latency
+  unit: MS
+requestRate:
+  goldenMetric: requestRate
+  title: Rate of requests
+  unit: COUNT
+dataTransferRate:
+  goldenMetric: dataTransferRate
+  unit: BYTES_PER_SECOND
+  title: Rate of data transferred

@@ -1,0 +1,26 @@
+domain: EXT
+type: PIXIE_KAFKA
+synthesis:
+  rules:
+  - identifier: kafka.broker.pod
+    name: kafka.broker.pod
+    encodeIdentifierInGUID: true
+    conditions:
+    - attribute: metricName
+      prefix: kafka.
+    - attribute: instrumentation.provider
+      value: pixie
+    tags:
+      k8s.cluster.name:
+      k8s.namespace.name:
+      k8s.pod.name:
+      kafka.broker.pod:
+      kafka.client_id:
+      kafka.req_cmd:
+      service.name:
+dashboardTemplates:
+  newRelic:
+    template: dashboard.json
+
+configuration:
+  alertable: true

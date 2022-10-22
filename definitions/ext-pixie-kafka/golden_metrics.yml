@@ -1,0 +1,15 @@
+latency:
+  title: Average latency
+  unit: MS
+  query:
+    select: average(kafka.latency)
+requestRate:
+  title: Rate of requests
+  unit: REQUESTS_PER_SECOND
+  query:
+    select: sum(kafka.requests_per_second)
+dataTransferRate:
+  title: Rate of data transferred
+  unit: BYTES_PER_SECOND
+  query:
+    select: sum(kafka.bytes_per_second)
