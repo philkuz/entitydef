@@ -14,7 +14,6 @@ synthesis:
       k8s.cluster.name:
       k8s.namespace.name:
       k8s.pod.name:
-      kafka.broker.pod:
       kafka.client_id:
       kafka.req_cmd:
       service.name:
