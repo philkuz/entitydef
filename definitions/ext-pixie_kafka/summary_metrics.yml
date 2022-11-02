@@ -1,12 +1,16 @@
-latency:
-  goldenMetric: latency
-  title: Average latency
+throughput:
+  goldenMetric: throughput
+  title: Throughput (rpm)
+  unit: REQUESTS_PER_MINUTE
+responseTimeMS:
+  goldenMetric: responseTimeMS
+  title: Response time (ms)
   unit: MS
-requestRate:
-  goldenMetric: requestRate
-  title: Rate of requests
-  unit: COUNT
+errorRate:
+  goldenMetric: errorRate
+  title: Error rate (%)
+  unit: PERCENTAGE
 dataTransferRate:
   goldenMetric: dataTransferRate
+  title: Throughput (bps)
   unit: BYTES_PER_SECOND
-  title: Rate of data transferred
